@@ -79,12 +79,11 @@
     @apply flex justify-between items-center;
   }
 
-  
   .homeTestimonials {
-    @apply text-white bg-black/80 py-14 md:py-0;
+    @apply text-white bg-black/80 md:py-14 lg:py-0;
   }
   .homeTestimonials__wrapper {
-    @apply grid items-center grid-cols-1 md:grid-cols-2 gap-5;
+    @apply grid items-center md:grid-cols-1 lg:grid-cols-2 gap-5;
   }
   .homeTestimonials__text h3 {
     @apply text-4xl mt-7 max-w-sm font-bold;
@@ -119,45 +118,105 @@
     @apply mt-5 text-justify;
   }
 
-  .propertiesSelection__card {
-    @apply flex flex-col items-center justify-center my-5
-    md:flex-row md:gap-1 lg:max-w-full;
+  .properties__item {
+    @apply grid grid-cols-1 gap-5 items-center my-7 lg:grid-cols-2;
   }
-  .propertiesSelection__card__details {
-    @apply px-5 py-10 text-justify;
+  .properties__item img {
+    @apply w-full;
   }
-  .propertiesSelection__card img {
-    @apply w-full md:w-72 md:h-96 md:object-cover lg:h-96 lg:w-1/2;
+  .properties__item h4 {
+    @apply text-xl font-bold;
   }
-  .propertiesSelection__card__details h4 {
-    @apply font-bold text-3xl;
+  .properties__item p {
+    @apply py-5 text-justify;
   }
-  .propertiesSelection__card__details p {
-    @apply md:my-6 lg:my-14 text-justify;
-  }
-  .propertiesSelection__card__details a {
-    @apply text-primary;
+  .properties__item a {
+    @apply inline-block text-primary hover:text-secondary;
   }
 
-  /*  .propertiesSelection__card {
-    @apply flex flex-col items-center justify-center my-5
-    md:flex-row md:gap-1 lg:max-w-full;
+  /* SINGLE-PROPERTIES */
+  /* .singleProperties__wrapper{
+    @apply grid 
+    md:grid-cols-1 md:gap-4
+    lg:grid-cols-[2fr_1fr] lg:gap-36;
   }
-  .propertiesSelection__card img {
-    @apply w-full md:w-72 md:h-96 md:object-cover lg:h-[30rem] lg:w-full;
+  main{
+    @apply max-w-7xl;
   }
-  .propertiesSelection__card__details {
-    @apply px-5 py-10 text-justify;
+  article {
+    @apply max-w-7xl;
   }
-  .propertiesSelection__card__details h4 {
-    @apply font-bold text-4xl;
+  article h3{
+    @apply font-bold text-3xl;
   }
-  .propertiesSelection__card__details p {
-    @apply my-14 text-lg text-justify;
+  article img{
+    @apply w-full /*w-[53rem] max-w-[53rem] my-7; 
   }
-  .propertiesSelection__card__details a {
-    @apply text-primary;
+  article p{
+    @apply text-justify;
+  }
+
+  aside{
+    @apply max-w-[28rem];
+  }
+  .singleProperties__details--signup{
+    @apply mt-5 mb-14;
+  }
+  .singleProperties__details--signup h5{
+    @apply font-bold text-xl;
+  }
+  .singleProperties__details--signup input{
+    @apply border border-black py-2 my-2 mr-5
+    lg:pr-16;
+  }
+  .singleProperties__posts h5{
+    @apply font-bold text-xl my-7;
+  }
+
+  .singleProperties__card{
+    @apply flex gap-3 py-3;
+  }
+  .singleProperties__card__details{
+    @apply max-w-80;
+  }
+  .singleProperties__card__details h6{
+    @apply font-bold;
+  }
+  .singleProperties__card__details p{
+    @apply my-3;
   } */
+
+  .singleProperties__card {
+    @apply flex gap-5 mb-7;
+  }
+  .singleProperties__card__details h6 {
+    @apply text-base font-bold;
+  }
+  .singleProperties__card__details p {
+    @apply my-[1rem];
+  }
+
+  /* CONTACT */
+  .contact__details ul {
+    @apply max-w-sm;
+  }
+  .contact__details ul li {
+    @apply flex shadow-lg w-96 mb-3 py-3 gap-2;
+  }
+  .contact__details ul li i {
+    @apply bg-primary text-white rounded-full p-2 ml-3;
+  }
+  .contact__details ul li span {
+    @apply font-bold;
+  }
+  .contact__input input,
+  textarea {
+    @apply border-[1.5px] border-black rounded-2xl mb-4 py-3 pl-5 pr-9;
+  }
+  .contact__input textarea::placeholder,
+  input::placeholder {
+    @apply font-bold text-black;
+  }
 
   .btn--primary {
     @apply inline-block px-4 py-2 text-white bg-primary border w-fit rounded-lg transition duration-150 ease-in-out hover:text-primary hover:bg-white hover:border-primary;

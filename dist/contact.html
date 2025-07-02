@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate - Single Properties</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="../img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="branding">
+            <a href="./index.html">
+              <img src="../img/LOGO 1.png" alt="This is the logo." />
+            </a>
+          </div>
+
+          <nav class="header__nav">
+            <ul>
+              <li><a href="./properties.html">Properties</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <a href="#" class="btn btn--primary">Get Started</a>
+          </nav>
+
+          <div class="toggle__menu">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact pt-48 pb-52">
+      <div class="container">
+        <small class="flex flex-col items-center xl:items-start"
+          >CONTACT US</small
+        >
+        <div
+          class="contact__wrapper grid gap-12 grid-cols-1 xl:grid-cols-[1fr_2fr] xl:gap-48"
+        >
+          <div
+            class="contact__details flex flex-col items-center xl:items-start"
+          >
+            <h2 class="font-bold text-4xl mt-7 mb-2">Let's working together</h2>
+            <p>Thank you for your interest in or services.</p>
+            <p class="mb-7">We're excited to hear from you.</p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-headphones-simple fa-2x"></i>
+                <div class="contact__details__information">
+                  <p>Call us for inquiry</p>
+                  <span>+258 (549) 2158 3215</span>
+                </div>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <div class="contact__details__information">
+                  <p>Email anytime</p>
+                  <span>realestate@mail.com</span>
+                </div>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-map-pin fa-2x w-12 h-12 text-center"></i>
+                <div class="contact__details__information">
+                  <p>Visit our office</p>
+                  <span>15 Maniel Lane, Frontline Berlin</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact__input flex flex-col mt-6">
+            <div class="contact__input__name flex gap-5">
+              <input class="w-full" type="text" placeholder="First Name" />
+              <input class="w-full" type="text" placeholder="Last Name" />
+            </div>
+            <input type="text" placeholder="Email Address" />
+            <textarea class="pb-40 mb-10" placeholder="Message"></textarea>
+
+            <a href="#" class="btn btn--primary">Send Message</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <small>
+          Copyright &copy 2025 Real Estate, designed by HM. All rights reserved.
+        </small>
+      </div>
+    </footer>
+
+    <script src="./toggleMenu.js"></script>
+  </body>
+</html>
